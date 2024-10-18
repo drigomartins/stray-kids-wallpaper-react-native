@@ -5,11 +5,21 @@ import { felix } from './felix';
 import { hyunjin } from './hyunjin';
 import { leeKnow } from './lee-know';
 import { stayKids } from './stray-kids';
+import { hanJisung } from './han-jisung';
+import { jeongin } from './jeongin';
+import { seungmin } from './seungmin';
+import { changbin } from './changbin';
+import { woojin } from './woojin';
 
 export const wallpaperList: WallpaperItem[] = [
-  ...bangChan,
-  ...felix,
+  ...stayKids,
   ...hyunjin,
+  ...felix,
+  ...bangChan,
   ...leeKnow,
-  ...stayKids
+  ...hanJisung,
+  ...jeongin,
+  ...seungmin,
+  ...changbin,
+  ...woojin,
 ];
