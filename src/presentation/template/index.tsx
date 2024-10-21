@@ -13,6 +13,7 @@ import {
   SubTitleView,
   TitleView,
   ToggleThemeView,
+  LogoView,
 } from './style';
 
 type PageContextType = 'home' | 'list' | 'item';
@@ -38,13 +39,14 @@ export const TemplateRoot: React.FC<Props> = ({
       <ContainerView theme={theme}>
         <StatusBar
           animated={true}
-          backgroundColor={getTheme(theme, '#f3f2f8', '#292d3e')}
+          backgroundColor={getTheme(theme, '#f3f2f8', '#0F2027')}
           style={getTheme(theme, 'dark', 'light')}
         />
         <HeaderView>
           {page === 'home' && (
             <AlignTitleView>
-              <SubTitleView theme={theme}>ANIME</SubTitleView>
+              {/* <SubTitleView theme={theme}>STRAY KIDS</SubTitleView> */}
+              <LogoView source={require('../../../assets/logo.png')} />
               <TitleView theme={theme}>WALLPAPER</TitleView>
             </AlignTitleView>
           )}

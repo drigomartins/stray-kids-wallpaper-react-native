@@ -11,10 +11,12 @@ export const ContainerView = styled.ScrollView`
 `;
 export const PressableView = styled.Pressable`
   width: 100%;
-  height: 150px;
+  max-width: 48%;
+  height: 300px;
   border-radius: 20px;
   margin-bottom: 15px;
   background-color: #fff;
+  margin: 2%;
 `;
 export const ContentAds = styled.View`
   margin-top: 10px;

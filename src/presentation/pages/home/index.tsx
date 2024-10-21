@@ -106,7 +106,7 @@ export const Home: React.FC<Props> = ({ navigation }) => {
       <ContainerImageView>
         <ContentAds>
           <BannerAd
-            unitId={'ca-app-pub-6202074218659375/7798136606'}
+            unitId={'ca-app-pub-6202074218659375~6580481173'}
             size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
             requestOptions={{
               requestNonPersonalizedAdsOnly: true,
@@ -117,7 +117,11 @@ export const Home: React.FC<Props> = ({ navigation }) => {
       <ContainerView>
         <FlatList
           data={filteredCategory}
-          numColumns={1}
+          numColumns={2}
+          columnWrapperStyle={{
+            justifyContent: 'space-between',
+            marginLeft: '-2%',
+          }}
           keyExtractor={(item, index) => `key-${index}`}
           removeClippedSubviews={true}
           scrollEnabled={false}

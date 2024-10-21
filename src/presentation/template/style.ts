@@ -16,7 +16,7 @@ export const ContainerView = styled.View<Props>`
   width: 100%;
   height: 100%;
   background-color: ${(props) =>
-    props.theme === 'light' ? '#f3f2f8' : '#292d3e'};
+    props.theme === 'light' ? '#f3f2f8' : '#0F2027'};
 `;
 export const HeaderView = styled.View<Props>`
   width: 100%;
@@ -48,3 +48,8 @@ export const TitleView = styled.Text<Props>`
   color: ${(props) => (props.theme === 'light' ? '#292d3e' : '#ffffff')};
 `;
 export const PressableView = styled.Pressable``;
+
+export const LogoView = styled.Image`
+  width: 70px;
+  height: 35px;
+`;
