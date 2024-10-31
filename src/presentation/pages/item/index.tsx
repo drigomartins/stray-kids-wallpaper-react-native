@@ -30,7 +30,7 @@ import {
 import { Props } from './type';
 
 const interstitial = InterstitialAd.createForAdRequest(
-  'ca-app-pub-6202074218659375~6580481173'
+  'ca-app-pub-6202074218659375/2640731589'
 );
 
 export const Item: React.FC<Props> = ({ navigation }) => {
